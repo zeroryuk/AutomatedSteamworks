@@ -32,7 +32,6 @@ currentPattern = OptionList[0]
 
 def keySpammer(v,v2): # spams key inputs
     global currentPattern
-    isMHWorldOpen = False
     windowsForm()
     counter = 0
     hkLabel = Label(text="", font=('Arial Black', 16), fg='white',bg=themeColor)
@@ -103,7 +102,7 @@ def windowsForm():
         tk.iconbitmap('AutomatedSteamworks.exe')
     except:
         print("missing file")
-    label = Label(text='Note: Works only if MHWorld is your main window!\n I "might" add controller inputs in the future', font=('Tahoma', 12), fg='Red',bg=themeColor)
+    label = Label(text='Note: Works only if MHWorld is your main window!\n Patterns are not consistent because of the space spam. \n I "might" add controller inputs in the future.', font=('Tahoma', 12), fg='Red',bg=themeColor)
     label.pack(side="bottom")
 
     #dropdown
