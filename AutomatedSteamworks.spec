@@ -1,9 +1,9 @@
-# -*- mode: python ; coding: utf-8 -*-
+# -*- mode: python -*-
 
 block_cipher = None
 
 
-a = Analysis(['AutomatedSteamworks.pyw'],
+a = Analysis(['AutomatedSteamworks.py'],
              pathex=['C:\\Users\\ZeroR\\source\\repos\\AutomatedSteamworks'],
              binaries=[],
              datas=[],
@@ -13,8 +13,7 @@ a = Analysis(['AutomatedSteamworks.pyw'],
              excludes=[],
              win_no_prefer_redirects=False,
              win_private_assemblies=False,
-             cipher=block_cipher,
-             noarchive=False)
+             cipher=block_cipher)
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
@@ -22,12 +21,9 @@ exe = EXE(pyz,
           a.binaries,
           a.zipfiles,
           a.datas,
-          [],
           name='AutomatedSteamworks',
           debug=False,
-          bootloader_ignore_signals=False,
           strip=False,
           upx=True,
-          upx_exclude=[],
           runtime_tmpdir=None,
           console=False , icon='C:\\Users\\ZeroR\\source\\repos\\AutomatedSteamworks\\steamworksLogo.ico')
